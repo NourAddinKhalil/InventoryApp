@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>MyFinalSalesDB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{5956b781-a013-46be-9653-310c03380a37}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>MyFinalSalesDB</RootNamespace>
+    <AssemblyName>MyFinalSalesDB</AssemblyName>
+    <ModelCollation>1025,CS</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>Arabic_100_CS_AI</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="Publish Manager" />
+    <Folder Include="dbo\Types" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Profile_Prope_Name_1.sql" />
+    <Build Include="dbo\Tables\User_Profile_Property_1.sql" />
+    <Build Include="dbo\Tables\User_Actions_Per_Screen_1.sql" />
+    <Build Include="dbo\Tables\User_1.sql" />
+    <Build Include="dbo\Tables\Unit_1.sql" />
+    <Build Include="dbo\Tables\Store_1.sql" />
+    <Build Include="dbo\Tables\Product_Unit_1.sql" />
+    <Build Include="dbo\Tables\Category_1.sql" />
+    <Build Include="dbo\Tables\Product_1.sql" />
+    <Build Include="dbo\Tables\Guaranteed_Notes_1.sql" />
+    <Build Include="dbo\Tables\Drawer_1.sql" />
+    <Build Include="dbo\Tables\Customer_Supplier_1.sql" />
+    <Build Include="dbo\Tables\Coupes_Of_Account_1.sql" />
+    <Build Include="dbo\Tables\Company_Info_1.sql" />
+    <Build Include="dbo\Tables\Invoice_1.sql" />
+    <Build Include="dbo\Tables\Screen_Roles_Detail_1.sql" />
+    <Build Include="dbo\Tables\Screen_Roles_Name_1.sql" />
+    <Build Include="dbo\Tables\Invoice_Details_1.sql" />
+    <Build Include="dbo\Tables\Pro_Store_Movement_1.sql" />
+    <Build Include="dbo\Tables\Accounts_1.sql" />
+    <Build Include="dbo\Stored Procedures\Select_All_Drawers.sql" />
+    <Build Include="dbo\Stored Procedures\Add_Company_Info.sql" />
+    <Build Include="dbo\Stored Procedures\Update_Company_Info.sql" />
+    <Build Include="dbo\Stored Procedures\Add_Screen_Roles_Detaile.sql" />
+    <Build Include="dbo\Types\Add_Users_Screen_Access_Type.sql" />
+    <Build Include="dbo\Types\Add_User_Profile_Property_Type.sql" />
+    <Build Include="dbo\Stored Procedures\Add_User_Profile_Prope.sql" />
+    <Build Include="dbo\Stored Procedures\Add_Product_Units.sql" />
+    <Build Include="dbo\Types\Add_Product_Unit_Type.sql" />
+    <Build Include="dbo\Stored Procedures\Update_Product_Units.sql" />
+    <Build Include="dbo\Stored Procedures\Update_Screen_Roles_Detail.sql" />
+    <Build Include="dbo\Stored Procedures\Update_User_Profile_Prope.sql" />
+    <Build Include="dbo\Stored Procedures\Update_Invoice.sql" />
+    <Build Include="dbo\Types\Account_List_Type.sql" />
+    <Build Include="dbo\Stored Procedures\Add_List_Of_Accounts.sql" />
+    <Build Include="dbo\Types\IDs_List_Type.sql" />
+    <Build Include="dbo\Stored Procedures\Update_List_Of_Accounts.sql" />
+    <Build Include="dbo\Types\Account_Coupes_List_Type.sql" />
+    <Build Include="dbo\Stored Procedures\Add_List_Of_Coupes.sql" />
+    <Build Include="dbo\Stored Procedures\Update_List_Of_Opening_Accounts.sql" />
+    <Build Include="dbo\Types\Pro_Movement_List_Type.sql" />
+    <Build Include="dbo\Stored Procedures\Add_List_Of_Pro_Movement.sql" />
+    <Build Include="Security\DESKTOP-PFO935N_AL-Khalil.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Stored Procedures\Get_The_Full_Product.sql" />
+    <Build Include="dbo\Stored Procedures\Get_Single_Full_Product.sql" />
+    <Build Include="dbo\Functions\Get_The_Sum_Of_The_Already_Paid_Invoices.sql" />
+    <Build Include="dbo\Tables\Opening_Destructor_Details.sql" />
+    <Build Include="dbo\Tables\Opening_And_Destuctor_Product.sql" />
+    <Build Include="dbo\Types\Opening_Destructor_Details_List.sql" />
+    <Build Include="dbo\Tables\Transfer_Bal_Details.sql" />
+    <Build Include="dbo\Tables\Transfer_Bal_BetweenStores.sql" />
+    <Build Include="dbo\Stored Procedures\Get_Full_Coupes_Of_Account.sql" />
+    <Build Include="dbo\Tables\Transfer_Money.sql" />
+    <Build Include="dbo\Stored Procedures\Get_Single_Full_Guarantee_Note.sql" />
+    <Build Include="dbo\Stored Procedures\Get_Full_Guarantee_Note.sql" />
+    <Build Include="dbo\Stored Procedures\Get_The_Max_Invoice.sql" />
+    <Build Include="dbo\Stored Procedures\Get_Full_Invoice_To_Print.sql" />
+    <Build Include="dbo\Views\MaxInvoiceView.sql" />
+    <Build Include="dbo\Views\FullProductView.sql" />
+    <Build Include="dbo\Views\FullInvoiceView.sql" />
+    <Build Include="dbo\Views\FullGuaranteedView.sql" />
+    <Build Include="dbo\Views\FullCoupesOfAccountView.sql" />
+    <Build Include="dbo\Tables\Manually_Rigister.sql" />
+    <Build Include="dbo\Stored Procedures\Filter_Invoice.sql" />
+    <Build Include="dbo\Views\Full_Product_Store_View.sql" />
+    <Build Include="dbo\Stored Procedures\Get_Full_Pro_Store_Move.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Publish Manager\SqlSchemaCompare1.scmp" />
+    <None Include="Publish Manager\MyFinalSalesDB.publish.xml" />
+  </ItemGroup>
+</Project>

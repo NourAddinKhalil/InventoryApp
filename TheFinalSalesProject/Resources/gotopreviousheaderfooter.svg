@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg x="0px" y="0px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" id="ShowPrevious" style="enable-background:new 0 0 32 32">
+  <style type="text/css">
+	.Green{fill:#039C23;}
+	.Black{fill:#727272;}
+	.Yellow{fill:#FFB115;}
+	.st0{opacity:0.75;}
+</style>
+  <g class="st0">
+    <path d="M18,14H8v-2h10V14z M18,16H8v2h10V16z M18,20H8v2h10V20z" class="Black" />
+  </g>
+  <rect x="10" y="4" width="18" height="6" rx="0" ry="0" class="Yellow" />
+  <path d="M20,10v16H6V8h4V6H5C4.5,6,4,6.5,4,7v20c0,0.5,0.5,1,1,1h16c0.5,0,1-0.5,1-1V10H20z" class="Black" />
+  <polygon points="30,20 30,32 24,26 " class="Green" />
+</svg>

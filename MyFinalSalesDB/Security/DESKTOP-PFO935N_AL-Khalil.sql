@@ -1,0 +1,11 @@
+﻿CREATE USER [DESKTOP-PFO935N\AL-Khalil] FOR LOGIN [DESKTOP-PFO935N\AL-Khalil]
+    WITH DEFAULT_SCHEMA = [db_accessadmin];
+
+
+
+
+
+
+
+
+

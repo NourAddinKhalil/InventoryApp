@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Unit] (
+    [ID]   INT           IDENTITY (1, 1) NOT NULL,
+    [Name] NVARCHAR (70) NOT NULL,
+    CONSTRAINT [PK_Unit] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
